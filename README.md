@@ -1,4 +1,4 @@
-# React Starter
+# React MobX Starter
 Simple starter for [React Js](https://facebook.github.io/react) project with MobX! Completely built with simple configuration of:
 
 - [React Router](https://github.com/reactjs/react-router)
@@ -16,7 +16,7 @@ Don't forget to clone it first, then
 npm install
 npm run dev
 ```
-Just start your project at http://localhost:8080. Have Fun!
+Just start your project at http://localhost:8080. Have Fun and Feel the magic of MobX!
 
 
 ## Thank You for Making it become useful~
