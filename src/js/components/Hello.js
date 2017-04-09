@@ -1,6 +1,6 @@
-import React, { PropTypes } from 'react'
+import React, { Component } from 'react'
 
-class Hello extends React.Component {
+class Hello extends Component {
 
   render () {
     return (

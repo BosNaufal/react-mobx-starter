@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import '../../sass/global/main.sass';
 
-class App extends React.Component {
+class App extends Component {
   render() {
     let { children } = this.props
 
@@ -11,7 +11,7 @@ class App extends React.Component {
         <div className="row">
           <div className="col-md-4 offset-md-4">
             <header>
-              <h1>React MobX Starter</h1>
+              <h1>Reacta MobX Starter</h1>
             </header>
             { children }
           </div>

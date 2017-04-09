@@ -1,9 +1,9 @@
-import React, { PropTypes } from 'react'
+import React, { Component } from 'react'
 import { observer } from 'mobx-react';
 
 import ListItem from './ListItem.js';
 
-class ExamplePage extends React.Component {
+class ExamplePage extends Component {
 
   render() {
     let { counter } = this.props

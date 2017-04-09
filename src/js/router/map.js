@@ -9,19 +9,18 @@ const routes = {
 
   path: '/',
   component: require('../components/App.js').default,
-
-  getIndexRoute(nextState, cb) {
+  getIndexRoute(nextState, callback) {
     require.ensure([], (require) => {
-      cb(null, { component: require('../components/Home/').default })
+      callback(null, { component: require('../components/Home/').default })
     })
   },
 
   childRoutes: [
     {
       path: 'example',
-      getIndexRoute(nextState, cb) {
+      getIndexRoute(nextState, callback) {
         require.ensure([], (require) => {
-          cb(null, { component: require('../components/Example/').default })
+          callback(null, { component: require('../components/Example/').default })
         })
       },
     }
