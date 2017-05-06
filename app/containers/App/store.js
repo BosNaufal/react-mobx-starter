@@ -1,6 +1,6 @@
 
 import { observable, action } from 'mobx';
-import remotedev from 'mobx-remotedev/lib/dev';
+import { exportStore } from 'utils/storeUtils.js'
 
 class AppStore {
   @observable someState = null
@@ -11,9 +11,4 @@ class AppStore {
 }
 
 const store = new AppStore()
-
-export default remotedev(store, {
-  onlyActions: true,
-  name: "AppStore",
-  global: true
-})
+export default exportStore(store, "AppStore", true, true)

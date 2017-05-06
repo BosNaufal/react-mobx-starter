@@ -1,6 +1,6 @@
 
 import { observable, action } from 'mobx';
-import remotedev from 'mobx-remotedev/lib/dev';
+import { exportStore } from 'utils/storeUtils.js'
 
 class ExampleStore {
   @observable counter = 0
@@ -25,9 +25,4 @@ class ExampleStore {
 }
 
 const store = new ExampleStore()
-
-export default remotedev(store, {
-  onlyActions: true,
-  name: "ExampleStore",
-  global: true
-})
+export default exportStore(store, "ExampleStore")

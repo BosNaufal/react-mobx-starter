@@ -14,8 +14,7 @@ class App extends Component {
     return (
       <div>
         { children }
-        { /* isDev &&  <DevTools /> */ }
-        <DevTools />
+        { isDev &&  <DevTools /> }
       </div>
     );
   }

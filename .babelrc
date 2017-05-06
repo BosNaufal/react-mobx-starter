@@ -1,0 +1,4 @@
+{
+  "plugins": ["react-hot-loader/babel", "transform-object-rest-spread", "transform-decorators-legacy"],
+  "presets": [["es2015", { "modules": false }], "react", "stage-1"]
+}

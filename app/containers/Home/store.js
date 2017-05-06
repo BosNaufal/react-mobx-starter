@@ -1,6 +1,6 @@
 
 import { observable, action } from 'mobx';
-import remotedev from 'mobx-remotedev/lib/dev';
+import { exportStore } from 'utils/storeUtils.js'
 
 class HomeStore {
   @observable someState = null
@@ -11,9 +11,4 @@ class HomeStore {
 }
 
 const store = new HomeStore()
-
-export default remotedev(store, {
-  onlyActions: true,
-  name: "HomeStore",
-  global: true
-})
+export default exportStore(store, "HomeStore")

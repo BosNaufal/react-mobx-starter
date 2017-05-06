@@ -20,10 +20,6 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel-loader',
-        query: {
-          plugins: ["react-hot-loader/babel", "transform-decorators-legacy", "transform-object-rest-spread"],
-          presets: [["es2015", { modules: false }], "react", "stage-1"]
-        }
       },
 
       {
@@ -55,7 +51,8 @@ module.exports = {
       api: __dirname + '/../app/api',
       assets: __dirname + '/../app/public/assets',
       components: __dirname + '/../app/components',
-      containers: __dirname + '/../app/containers'
+      containers: __dirname + '/../app/containers',
+      utils: __dirname + '/../app/utils',
     }
   },
 

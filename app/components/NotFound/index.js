@@ -1,20 +1,16 @@
 
-<template>
-  <div class="Root">
-    <h1>Not Found...</h1>
-  </div>
-</template>
+import React, { Component } from 'react'
 
-<script>
+class NotFound extends Component {
 
-  export default {
-
-
-
+  render() {
+    return (
+      <div>
+        <h1>Not Found...</h1>
+      </div>
+    );
   }
 
-</script>
+}
 
-<style lang="sass" scoped>
-  @import "./style.sass"
-</style>
+export default NotFound;
